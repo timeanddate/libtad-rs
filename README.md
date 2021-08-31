@@ -9,8 +9,8 @@ An access key and a secret key is required to use the API. For more information,
 
 "async-client" can be enabled by disabling default features and adding "async-client" as a feature.
 
-# Astronomy API
-## Astro Event Service
+## Astronomy API
+### Astro Event Service
 Get astronomical events for multiple places and objects:
 
 ```rust ignore
@@ -25,7 +25,7 @@ let request = AstroEventRequest::new()
 let response = client.get_astro_events(&request);
 ```
 
-## Astro Position Service
+### Astro Position Service
 Get astronomical data for multiple places and objects:
 
 ```rust ignore
@@ -39,8 +39,8 @@ let request = AstroPositionRequest::new()
 let response = client.get_astro_position(&request);
 ```
 
-# Date Calculator API
-## Business Date Service
+## Date Calculator API
+### Business Date Service
 Calculate a business date by adding days to a given date:
 
 ```rust ignore
@@ -64,7 +64,7 @@ let request = BusinessDateRequest::new()
 let response = client.calculate_business_date(&request);
 ```
 
-## Business Duration Service
+### Business Duration Service
 Calculate duration between two timestamps:
 
 ```rust ignore
@@ -76,8 +76,8 @@ let request = BusinessDurationRequest::new()
 let response = client.calculate_business_duration(&request);
 ```
 
-# Holidays API
-## Holidays Service
+## Holidays API
+### Holidays Service
 Get all holidays for a year and one or multiple countries:
 
 ```rust ignore
@@ -89,8 +89,8 @@ let request = HolidaysRequest::new()
 let response = client.get_holidays(&request);
 ```
 
-# On This Day API
-## On This Day Service
+## On This Day API
+### On This Day Service
 Get events on this day:
 
 ```rust ignore
@@ -119,8 +119,8 @@ let request = OnThisDayRequest::new()
 let response = client.get_events_on_this_day(&request);
 ```
 
-# Places API
-## Places Service
+## Places API
+### Places Service
 Get all places:
 
 ```rust ignore
@@ -139,8 +139,8 @@ let request = PlacesRequest::new()
 let response = client.get_places(&request);
 ```
 
-# Time API
-## ConvertTime Service
+## Time API
+### ConvertTime Service
 Convert time from a location to multiple locations:
 
 ```rust ignore
@@ -153,7 +153,7 @@ let request = ConvertTimeRequest::new()
 let response = client.convert_time(&request).unwrap();
 ```
 
-## DSTList Service
+### DSTList Service
 Get all daylight saving times:
 
 ```rust ignore
@@ -171,7 +171,7 @@ let response = client.get_daylight_savings_time(&request).unwrap();
 ```
 
 
-## Timeservice Service
+### Timeservice Service
 Get current time for a place:
 
 ```rust ignore
