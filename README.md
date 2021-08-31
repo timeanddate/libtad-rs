@@ -1,4 +1,6 @@
 # Time and Date Rust API
+![docs.rs](https://img.shields.io/docsrs/libtad-rs) ![Crates.io](https://img.shields.io/crates/v/libtad-rs)
+
 libtad-rs is a Rust library for accessing Time and Date API services. 
 
 An access key and a secret key is required to use the API. For more information, see our [API Services page](https://services.timeanddate.com).
