@@ -1,5 +1,5 @@
 # Time and Date Rust API
-![docs.rs](https://img.shields.io/docsrs/libtad-rs) ![Crates.io](https://img.shields.io/crates/v/libtad-rs) [![Build Status](https://app.travis-ci.com/timeanddate/libtad-rs.svg?branch=master)](https://app.travis-ci.com/timeanddate/libtad-rs)
+[![docs.rs](https://img.shields.io/docsrs/libtad-rs)](https://docs.rs/libtad-rs) [![Crates.io](https://img.shields.io/crates/v/libtad-rs)](https://crates.io/crates/libtad-rs) [![Build Status](https://app.travis-ci.com/timeanddate/libtad-rs.svg?branch=master)](https://app.travis-ci.com/timeanddate/libtad-rs)
 
 libtad-rs is a Rust library for accessing Time and Date API services. 
 
