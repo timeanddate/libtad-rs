@@ -77,7 +77,7 @@ impl<A> TidesRequest<A> {
         self
     }
 
-    /// Toggle whether to resolve also subordinate stations or just reference stations.
+    /// Toggle whether to resolve subordinate stations or just reference stations.
     pub fn set_subordinate(mut self, enable: bool) -> Self {
         self.subordinate.insert(enable.into());
 

@@ -23,7 +23,7 @@ impl Service for TidesService {
 impl ServiceClient {
     #[maybe_async]
     /// The *Tides* service can be used to retrieve predicted tidal data over a given time
-    /// interval for a specific place.
+    /// interval for one or multiple places.
     pub async fn get_tidal_data(
         &self,
         request: &TidesRequest,
