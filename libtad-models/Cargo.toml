@@ -1,6 +1,6 @@
 [package]
 name = "libtad-models"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2018"
 authors = ["Daniel Alvsåker <daniel@timeanddate.com>"]
 keywords = ["time", "date", "timeanddate", "api"]

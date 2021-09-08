@@ -1,6 +1,6 @@
 [package]
 name = "libtad-rs"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2018"
 authors = ["Daniel Alvsåker <daniel@timeanddate.com>"]
 categories = ["api-bindings"]
@@ -15,7 +15,7 @@ documentation = "https://docs.rs/libtad-rs"
 
 [dependencies]
 # API models
-libtad-models = { path = "libtad-models", version = "0.1" }
+libtad-models = { path = "libtad-models", version = "0.2" }
 
 # Deserialization
 serde = { version = "1.0", features = ["derive"] }
