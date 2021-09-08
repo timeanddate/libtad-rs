@@ -15,6 +15,9 @@ pub mod onthisday;
 /// Places API.
 pub mod places;
 
+/// Tides API.
+pub mod tides;
+
 /// Time API.
 pub mod time;
 

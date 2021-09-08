@@ -14,18 +14,22 @@ pub struct Geo {
     pub country: Country,
 
     /// Geographical latitude of the location.
-    #[serde(deserialize_with = "custom_deserialize::float_or_empty_string", default)]
+    #[serde(
+        deserialize_with = "custom_deserialize::float_or_empty_string",
+        default
+    )]
     pub latitude: Option<f32>,
 
     /// Geographical longitude of the location.
-    #[serde(deserialize_with = "custom_deserialize::float_or_empty_string", default)]
+    #[serde(
+        deserialize_with = "custom_deserialize::float_or_empty_string",
+        default
+    )]
     pub longitude: Option<f32>,
 }
 
-
 mod custom_deserialize {
-    use serde::de::{self, value, Deserialize, Deserializer, SeqAccess, Visitor};
-
+    use serde::de::{self, Deserializer, Visitor};
 
     pub fn float_or_empty_string<'de, D>(deserializer: D) -> Result<Option<f32>, D::Error>
     where

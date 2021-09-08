@@ -79,7 +79,6 @@ let response = client.calculate_business_duration(&request);
 ```
 
 ## Holidays API
-### Holidays Service
 Get all holidays for a year and one or multiple countries:
 
 ```rust ignore
@@ -92,7 +91,6 @@ let response = client.get_holidays(&request);
 ```
 
 ## On This Day API
-### On This Day Service
 Get events on this day:
 
 ```rust ignore
@@ -122,7 +120,6 @@ let response = client.get_events_on_this_day(&request);
 ```
 
 ## Places API
-### Places Service
 Get all places:
 
 ```rust ignore
@@ -141,6 +138,17 @@ let request = PlacesRequest::new()
 let response = client.get_places(&request);
 ```
 
+## Tides API
+Get tidal data for one or multiple places:
+
+```rust ignore
+let request = TidesRequest::new()
+	.with_placeid("norway/sola")
+	.with_placeid("norway/oslo");
+
+let response = client.get_tidal_data(&request);
+```
+
 ## Time API
 ### ConvertTime Service
 Convert time from a location to multiple locations:
@@ -152,7 +160,7 @@ let request = ConvertTimeRequest::new()
     .with_toid("179")
     .set_datetime(DateTime::from("2021-04-05T16:45:02"));
 
-let response = client.convert_time(&request).unwrap();
+let response = client.convert_time(&request);
 ```
 
 ### DSTList Service
@@ -161,7 +169,7 @@ Get all daylight saving times:
 ```rust ignore
 let request = DSTListRequest::new();
 
-let response = client.get_daylight_savings_time(&request).unwrap();
+let response = client.get_daylight_savings_time(&request);
 ```
 
 Get daylight saving times for a specific year:
@@ -169,7 +177,7 @@ Get daylight saving times for a specific year:
 ```rust ignore
 let request = DSTListRequest::new().set_year(2021);
 
-let response = client.get_daylight_savings_time(&request).unwrap();
+let response = client.get_daylight_savings_time(&request);
 ```
 
 

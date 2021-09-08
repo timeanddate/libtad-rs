@@ -21,5 +21,8 @@ pub mod onthisday;
 /// Place models.
 pub mod places;
 
+/// Tides API.
+pub mod tides;
+
 /// Time models.
 pub mod time;
