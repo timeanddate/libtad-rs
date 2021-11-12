@@ -3,7 +3,7 @@
 
 libtad-rs is a Rust library for accessing Time and Date API services. 
 
-An access key and a secret key is required to use the API. For more information, see our [API Services page](https://services.timeanddate.com).
+An access key and a secret key is required to use the API. For more information, see our [API Services page](https://dev.timeanddate.com).
 
 ### Cargo features
 - "sync-client": Enabled by default.
