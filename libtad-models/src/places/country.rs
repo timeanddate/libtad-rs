@@ -4,7 +4,7 @@ use serde::Deserialize;
 /// Information about a country.
 pub struct Country {
     /// The ISO 3166-1-alpha-2 country code.
-    /// See <https://services.timeanddate.com/api/doc/v3/bi01.html#ISO3166>
+    /// See <https://dev.timeanddate.com/docs/type-iso#isoCountry>
     pub id: String,
 
     /// Full name of the country.
