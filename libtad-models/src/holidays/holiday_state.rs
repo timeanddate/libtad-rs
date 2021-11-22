@@ -5,7 +5,7 @@ use serde::Deserialize;
 pub struct HolidayState {
     /// An ISO 3166-1 country or ISO 3166-2 country state code.
     ///
-    /// See also: <https://services.timeanddate.com/api/doc/v3/bi01.html#ISO3166>
+    /// See also: <https://dev.timeanddate.com/docs/type-iso#isoCountry>
     pub iso: String,
 
     /// Unique id of the state/subdivision.
