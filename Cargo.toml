@@ -7,7 +7,7 @@ categories = ["api-bindings"]
 keywords = ["time", "date", "timeanddate", "api"]
 license = "MIT"
 description = "Rust library for accessing Time and Date APIs"
-homepage = "https://services.timeanddate.com"
+homepage = "https://dev.timeanddate.com"
 repository = "https://github.com/timeanddate/libtad-rs"
 documentation = "https://docs.rs/libtad-rs"
 
