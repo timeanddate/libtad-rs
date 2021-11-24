@@ -5,7 +5,7 @@ use serde::Deserialize;
 /// Information about date, time and timezone.
 pub struct Time {
     /// ISO representation of date and time, time zone included
-    /// (see <https://services.timeanddate.com/api/doc/v3/bi01.html#ISO8601>)
+    /// (see <https://dev.timeanddate.com/docs/type-iso#isoTime>)
     /// if different from UTC. If time is not applicable, only the date is shown.
     ///
     /// Example: 2011-06-08T09:18:16+02:00
